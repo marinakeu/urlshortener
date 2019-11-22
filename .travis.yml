@@ -1,4 +1,6 @@
 language: python
+install:
+  - pip install -r requirements.txt
 deploy:
   provider: heroku
   api_key:
@@ -6,3 +8,5 @@ deploy:
   app: marinakeu-urlshortener
   on:
     repo: marinakeu/urlshortener
+script:
+  - pytest
