@@ -1,2 +1,1 @@
 # urlshortener
-# Django
